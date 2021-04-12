@@ -1,113 +1,149 @@
 /*CSS Reset*/
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* CSS Variables */
 
-
 /* Navigation Bar */
-#navbar{
-    display: flex;
-    align-items:center;
+#navbar {
+  display: flex;
+  align-items: center;
+  /* justify-items: center; */
+  /* justify-content: center; */
 }
 
-#navbar::before{
-    content:"";
-    background-color: rgba(44, 44, 44, 0.);
-    position: absolute;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.4;
+#navbar::before {
+  content: "";
+  background-color: rgba(44, 44, 44, 0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
 }
 
-/* #navlinks{
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-} */
-
+.navlinks {
+  display: inline-block;
+  margin: 0 auto;
+  /* width: 50%; */
+}
 /* Navigation Bar: Logo and Image  */
-#logo{
-    margin: .5em 0.3em;
+#logo {
+  margin: 0em 0em;
+  width: 25%;
 }
 
-#logo img{
-    margin: 0.3em 1em;
+#logo img {
+  margin: 0.3em 1em;
+  justify-content: flex-start;
 }
 /* Navigation Bar: List Styling  */
 
 #navbar {
-    position: relative;
+  position: relative;
 }
-#navbar ul{
-    display: flex;
-    text-decoration: none;
-    font-family: 'Poppins', 'Roboto' ,sans-serif;
+#navbar ul {
+  display: flex;
+
+  text-decoration: none;
+  font-family: "Poppins", "Roboto", sans-serif;
 }
-#navbar ul li{
-    list-style: none;
-    font-size: 1.25rem;
-    font-family: 'Poppins', 'Roboto' ,sans-serif;
+#navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+  font-family: "Poppins", "Roboto", sans-serif;
 }
 
-#navbar ul li a{
-    color: black;
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-    
+#navbar ul li a {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  padding: 1rem;
+  text-decoration: none;
 }
-#navbar ul li a:hover{
-    color: lightseagreen;
-    
+#navlinks li a:hover {
+  color: lightseagreen;
 }
 
+.signin {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.signin ul {
+  align-items: center;
+}
+#navbar #signup {
+  padding: 0.1em 0.5em;
+}
+.signup {
+  text-decoration: none;
+  border: 2px solid rgb(42, 71, 71);
+  background-color: rgb(63, 139, 139);
+  color: rgb(30, 51, 51);
+  margin: 0em 1em;
+  margin-right: 2em;
+  font-size: 1.3em;
+  border-radius: 50px;
+}
 /* Home Section */
 
-#home{
-    display: flex;
-    flex-direction: column;
-    padding: 1em 36em;
-    justify-content: center;
-    align-items: center;
-    height:30vh;
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 36em;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
-#home::before{
-    content:"";
-    position: absolute;
-    background: url("../bgmain1.jpg") no-repeat center center/cover;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.8;
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../bgmain1.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
 }
-#home h1{
-    color: darkslategray;
-    text-align: center;
-    font-family: 'RocknRoll One', sans-serif;
+#home h1 {
+  color: darkslategray;
+  text-align: center;
+  font-family: "RocknRoll One", sans-serif;
 }
-#home p{
-    color:dimgray;
-    text-align: center;
-    font-size: 1.3rem;
-    font-family: 'Poppins', 'Roboto' ,sans-serif;
+#home p {
+  color: dimgray;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Poppins", "Roboto", sans-serif;
 }
 /* Utility class */
-.h-primary{
-    font-size: 3rem;
-    padding:1em;
+.h-primary {
+  font-size: 3rem;
+  padding: 1em;
 }
 
-.btn{
-    padding: 0.5em 1em;
-    border: 2px solid rgb(42, 71, 71);
-    background-color: rgb(63, 139, 139);
-    color: rgb(30, 51, 51);
-    margin: 1em;
-    font-size: 1.3em;
-    border-radius: 5px;
+.btn {
+  padding: 0.5em 1em;
+  border: 2px solid rgb(42, 71, 71);
+  background-color: rgb(63, 139, 139);
+  color: rgb(30, 51, 51);
+  margin: 1em;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+button a {
+  color: rgb(30, 51, 51);
+}
+#signin ul li a:hover {
+  color: rgb(196, 233, 230);
+}
+a:hover {
+  color: rgb(196, 233, 230);
 }
