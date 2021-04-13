@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* CSS Variables */
@@ -79,6 +80,10 @@
 .signin ul {
   align-items: center;
 }
+
+#signin ul li a:hover {
+    color: rgb(196, 233, 230);
+  }
 #navbar #signup {
   padding: 0.1em 0.5em;
 }
@@ -113,9 +118,11 @@
   opacity: 0.8;
 }
 #home h1 {
-  color: darkslategray;
-  text-align: center;
-  font-family: "RocknRoll One", sans-serif;
+    color: darkslategray;
+    text-align: center;
+    font-family: "RocknRoll One", sans-serif;
+    margin-top: 5em;
+
 }
 #home p {
   color: dimgray;
@@ -123,9 +130,79 @@
   font-size: 1.3rem;
   font-family: "Poppins", "Roboto", sans-serif;
 }
+/* Services Section */
+#services{
+    margin: 1em;
+    display: flex;
+}
+
+.services h1{
+    color: darkslategray;
+    padding:0.5em
+}
+ 
+.services{
+    margin-top: 22em;
+    margin-bottom: 5em;
+
+}
+#services .box{
+    
+    border: 2px solid rgb(42, 71, 71);
+    border-radius: 23px;
+    padding: 1em;
+    padding-top: 2em;
+    margin: 1em;
+    background-color:rgb(186, 212, 212) ;
+}
+#services .box img{
+    height: 12em;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: "Poppins", "Roboto", sans-serif;
+    
+}
+
+/* Clients Section */
+
+#client-section{
+    height: 45vh;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../img/bgteal.png");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+padding: 1.3em;
+}
+
+#clients img{
+    height: 5em;
+}
 /* Utility class */
 .h-primary {
+    font-family: "RocknRoll One", sans-serif;
   font-size: 3rem;
+  padding: 1em;
+}
+.h-secondary {
+    font-family: "RocknRoll One", sans-serif;
+  font-size: 1.5rem;
   padding: 1em;
 }
 
@@ -141,9 +218,11 @@
 button a {
   color: rgb(30, 51, 51);
 }
-#signin ul li a:hover {
-  color: rgb(196, 233, 230);
-}
+
 a:hover {
   color: rgb(196, 233, 230);
+}
+
+.center{
+    text-align: center;
 }
