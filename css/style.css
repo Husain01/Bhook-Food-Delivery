@@ -2,13 +2,17 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
-
+html{
+  scroll-behavior: smooth;
+}
 /* CSS Variables */
 
 /* Navigation Bar */
 #navbar {
+  position: sticky;
+
   display: flex;
   align-items: center;
   /* justify-items: center; */
@@ -34,7 +38,7 @@
 #logo {
   margin: 0em 0em;
   width: 25%;
-}
+ }
 
 #logo img {
   margin: 0.3em 1em;
@@ -43,7 +47,7 @@
 /* Navigation Bar: List Styling  */
 
 #navbar {
-  position: relative;
+  position: sticky;
 }
 #navbar ul {
   display: flex;
@@ -102,10 +106,10 @@
 #home {
   display: flex;
   flex-direction: column;
-  padding: 1em 36em;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 100%;
+  width: 100%;
 }
 #home::before {
   content: "";
@@ -121,7 +125,7 @@
     color: darkslategray;
     text-align: center;
     font-family: "RocknRoll One", sans-serif;
-    margin-top: 5em;
+    margin-top: 150px;
 
 }
 #home p {
@@ -136,13 +140,13 @@
     display: flex;
 }
 
-.services h1{
+#services-head h1{
     color: darkslategray;
-    padding:0.5em;
+    padding:0.5em 0;
 }
  
-.services{
-    margin-top: 22em;
+#services-head{
+    margin-top: 16em;
     margin-bottom: 5em;
 
 }
